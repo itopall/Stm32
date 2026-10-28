@@ -1,11 +1,20 @@
-# Proje Pusulası durum yayını
+# Proje Pusulası ile çalışma kuralı
 
-Bu depo Proje Pusulası panelinde izlenir. Mevcut proje talimatlarına ve çalışma akışına uyarak ilerlemeyi GitHub'da görünür tut.
+Bu depo Proje Pusulası panelinde izlenir. Bu talimat, depoda çalışan yapay zekâ ajanları ve geliştiriciler içindir. Kullanıcının açık talimatları, güvenlik kuralları ve bu deponun daha özel talimatları önceliklidir.
 
-- Anlamlı kod değişikliklerini açık commit mesajlarıyla GitHub'a gönder. İnceleme gereken çalışmayı PR olarak aç; tamamlanınca birleştir.
-- Yapılacak işleri açık GitHub issue olarak takip et. Hata, engel veya eksik için `bug`, `hata`, `eksik`, `blocked`, `engel` veya `risk` etiketi kullan. Yol haritası öğeleri için `roadmap`, `hedef` veya `milestone` etiketi ya da açık GitHub milestone kullan.
-- Depo kökündeki `PROJECT_STATUS.md` dosyasını iş ilerledikçe güncelle. `## Yapılacak`, `## Eksik` ve `## Yol haritası` başlıkları altına yalnızca doğrulanmış, henüz açık maddeleri yaz. Tamamlanan maddeleri kaldır veya `[x]` olarak işaretle; panel bunları açık iş saymaz.
-- İş zaten bir issue olarak varsa durum dosyasında tekrar etmeyerek tek bir güncel kaynak tut. Mevcut proje durum belgeleriyle çelişme; bu dosyaya kısa ve güncel özet taşı.
-- Tamamlanma iddiasını ilgili commit, kapanan issue veya birleşen PR ile destekle. Gizli bilgi, token ya da kişisel veri yayınlama.
+## Çalışmaya başlarken
+- README, mevcut proje belgeleri, açık issue ve PR'lar ile kökteki PROJECT_STATUS.md dosyasını incele. Mevcut işi ve kararları anlamadan yeni iş veya durum kaydı oluşturma.
+- Kullanıcının istediği işi uygula; kapsamı yalnızca paneli doldurmak için genişletme.
 
-Panel, GitHub'daki bu kayıtları otomatik okur; panel içinde elle veri girilmez.
+## İş ilerlerken
+- Yapılacak somut işleri GitHub issue ile takip et. Doğrulanmış hata, eksik, engel veya risk için `bug`, `hata`, `eksik`, `blocked`, `engel` ya da `risk` etiketi kullan. Planlanan hedef için `roadmap`, `hedef` veya `milestone` etiketi ya da açık milestone kullan. Etiket yoksa ve yetki varsa oluştur; yoksa PROJECT_STATUS.md içinde doğru başlık altında belirt.
+- İnceleme veya birleştirme gerektiren değişiklikleri PR'da tut. Commit ve PR açıklamalarında ne değiştiğini, nedenini ve doğrulama sonucunu açıkça yaz.
+- Yapılan işi test et veya uygun başka yolla doğrula. Doğrulanmayan bir sonucu tamamlandı diye sunma.
+
+## Çalışma sonunda durum yayını
+- Değişiklik, keşfedilen eksik veya plan değişikliği varsa PROJECT_STATUS.md dosyasını güncelle. Yalnızca gerçekten açık maddeleri `## Yapılacak`, `## Eksik`, `## Yol haritası` başlıkları altında `- [ ] Kısa, somut madde` biçiminde yaz. Biten maddeleri kaldır veya `[x]` yap.
+- Aynı iş zaten açık issue veya milestone olarak kayıtlıysa durum dosyasında yineleme. Issue/PR durumunu ilerleme ve sonuçla güncelle; biten issue'yu kapat. Kararları ve gerekçeyi ilgili kayıtta kısa ve anlaşılır tut.
+- Yayınlanan durum yalnızca GitHub'a gönderildiğinde panelde görünür. GitHub'a gönderme yetkisi yoksa yerel değişiklikleri hazırla ve kullanıcıya panelin henüz güncellenmediğini açıkça söyle.
+- Hassas bilgi, token, kimlik bilgisi veya kişisel veri yayınlama. Bilinmeyen durumu tahmin ederek doldurma.
+
+Proje Pusulası bu deponun README ve PROJECT_STATUS.md dosyalarını, açık issue/PR'ları, milestone'ları ve son commit'leri otomatik okur. Panelde elle kayıt girilmesi beklenmez.
